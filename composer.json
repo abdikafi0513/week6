@@ -1,0 +1,12 @@
+{
+  "name": "abdikafi/328/Week6",
+  "authors": [
+    {
+      "name": "Abdikafi Jama",
+      "email": "jama.abdikafi@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
