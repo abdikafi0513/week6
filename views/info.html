@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Week 6</title>
+    <meta charset="utf-8">
+    <title>{{ @title }}</title>
 </head>
 <body>
+<p>User logged in as {{ @username }} using {{ @password }}</p>
+<h3>Temperature</h3>
+<p>Fahrenheit: {{ @temp }} degrees</p>
+<p>Celsius: {{ round((@temp-32) * (5.0/9.0), 2) }} degrees</p>
+<p>{{@color}}</p>
+
+<ul>
+<repeat group="{{@fruits}}" value="{{@fruits}}">
+    <p><li>{{@fruits}}</li></p>
+</repeat>
+</ul>
+<repeat group="{{@cities}}" key="{{@key}}"value="{{@value}}">
+    <input type="Checkbox"  valeu="{{@key}}" >{{@value}}<br>
+</repeat><br>
+<repeat group="{{@colors}}" value="{{@colors}}">
+    <label><input type="radio"  name="colors" value="{{@colors}}"  >{{@colors}}</label><br>
+</repeat>
+
+
 
 </body>
 </html>
